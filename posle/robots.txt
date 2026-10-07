@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://zolotarevmikhail.github.io/motorplus-upgrade/posle/sitemap.xml
