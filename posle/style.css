@@ -1,0 +1,37 @@
+/* Мотор+ «после» — демо. Палитра: графит + сигнальный оранж. */
+:root{--bg:#F4F4F2;--card:#E9E9E6;--text:#1B1D21;--acc:#F2761B;--head:#171A1F}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:17px/1.55 -apple-system,"Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.btn{text-decoration:none;border-radius:10px;padding:11px 20px;font-weight:700;font-size:15px;display:inline-block}
+.btn-cta{background:var(--acc);color:#fff}
+.nav{display:flex;align-items:center;padding:18px 20px}
+.brand{font-weight:900;letter-spacing:.06em;font-size:19px}
+.brand span{color:var(--acc)}
+.nav .btn{margin-left:auto}
+.hero{display:grid;grid-template-columns:1fr 360px;gap:40px;align-items:center;padding:40px 20px 56px}
+.kicker{font-size:12px;letter-spacing:.14em;color:var(--acc);text-transform:uppercase;font-weight:700;margin-bottom:10px}
+h1{font-size:clamp(28px,4.4vw,42px);line-height:1.18;letter-spacing:-.01em;font-weight:800}
+h1 em{font-style:normal;color:var(--acc)}
+.lead{margin:14px 0 18px;font-size:18px}
+.micro{font-size:13px;color:#5B5F66;margin-top:10px}
+.hero img{width:100%;height:auto;border-radius:14px;display:block}
+section{padding:40px 0}
+h2{font-size:clamp(22px,3vw,28px);margin-bottom:20px;font-weight:800}
+.prices{list-style:none;padding:0;display:grid;gap:10px;max-width:640px}
+.prices li{border-left:3px solid var(--acc);padding:6px 0 6px 14px;background:var(--card);border-radius:0 10px 10px 0}
+.steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:s}
+.steps li{background:var(--card);border-radius:12px;padding:16px;counter-increment:s}
+.steps li::before{content:"0"counter(s);font-weight:900;color:var(--acc)}
+.steps h3{font-size:16px;margin:6px 0}
+.steps p{font-size:14px;color:#46494E}
+.form-box{background:var(--card);border-radius:16px;padding:28px;max-width:560px}
+form{display:grid;gap:10px;margin-top:14px}
+.inp{border:1px solid #CFD2D6;background:#fff;border-radius:10px;padding:12px 14px;font-size:16px}
+.inner-footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:18px 20px;border-top:1px solid #D5D5D2;font-size:13px;color:#5B5F66}
+.fade.pre{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
+.fade.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.fade{transition:none}.fade.pre{opacity:1;transform:none}}
+@media (max-width:860px){.hero{grid-template-columns:1fr;gap:24px;padding:26px 20px 40px}.steps{grid-template-columns:repeat(2,1fr)}.nav .btn{font-size:13px;padding:9px 14px}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}.form-box{padding:18px}}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Автосервис «Мотор+» в Перми — цена до ремонта, не после</title>
+<meta name="description" content="Диагностика и ремонт ходовой и двигателей в «Мотор+» (Пермь): смету диктую после осмотра и до начала работ. Запись на завтра в два клика, без допродаж.">
+<meta property="og:title" content="Автосервис «Мотор+» в Перми">
+<meta property="og:description" content="Смета до начала работ, запись на завтра, без допродаж в процессе.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zolotarevmikhail.github.io/motorplus-upgrade/">
+<meta property="og:image" content="https://zolotarevmikhail.github.io/motorplus-upgrade/img/garage.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://zolotarevmikhail.github.io/motorplus-upgrade/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23171a1f'/%3E%3Cpath d='M20 40h24l-3 8h-18zM22 40c-1-10 2-16 10-16s11 6 10 16' stroke='%23F2761B' stroke-width='3.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Мотор+","address":{"@type":"PostalAddress","addressLocality":"Пермь","streetAddress":"ул. Заводская, 15","addressCountry":"RU"},"telephone":"7-900-000-00-00","openingHours":"Пн-Сб 09:00-19:00"}
+</script>
+</head>
+<body>
+
+<header class="wrap nav">
+  <span class="brand">МОТОР<span>+</span></span>
+  <a class="btn btn-cta" href="#zapis">Записаться на завтра</a>
+</header>
+
+<main>
+<section class="wrap hero">
+  <div>
+    <p class="kicker">автосервис, Пермь · пн–сб 9:00–19:00</p>
+    <h1>Смету диктую после осмотра и <em>до начала</em> работ</h1>
+    <p class="lead">Ходовая, двигатели, компьютерная диагностика. Разобрал — назвал цену — жду твоё решение. Не нашёл причины менять всю деталь — не буду предлагать.</p>
+    <div class="btns">
+      <a class="btn btn-cta" href="#zapis">Записаться на завтра</a>
+    </div>
+    <p class="micro">Заполняешь форму — перезвоню за 40 минут в рабочее время и закреплю время.</p>
+  </div>
+  <figure class="fade">
+    <img src="img/garage.jpg" width="1024" height="530" alt="Седан в чистом боксе автосервиса, ровный свет" fetchpriority="high">
+  </figure>
+</section>
+
+<section class="wrap" id="price">
+  <h2>Что сколько стоит</h2>
+  <ul class="prices">
+    <li><strong>Компьютерная диагностика</strong> — 900 ₽, при записи на ремонт — бесплатно</li>
+    <li><strong>Переборка ходовой (одна ось)</strong> — от 4 500 ₽ работа + запчасти по смете</li>
+    <li><strong>Замена масла и фильтров</strong> — 800 ₽ + фильтры, масло можно своё</li>
+    <li><strong>Снятие и сборка ДВС</strong> — от 18 000 ₽, срок по смете до старта</li>
+  </ul>
+  <p class="micro">Смета письменная и не трогается во время ремонта: нашёл попутную проблему — фотографирую, показываю, считаю отдельной строкой. Не согласовал — не делаю.</p>
+</section>
+
+<section class="wrap">
+  <h2>Как проходит визит</h2>
+  <ol class="steps">
+    <li class="fade"><h3>Запись</h3><p>Форма ниже или звонок. Называешь модель и симптом — бронирую подъёмник на удобный час.</p></li>
+    <li class="fade"><h3>Осмотр</h3><p>Сажусь с телефоном в бокс: показываю, что изношено, и что ещё отъездит. Смета на экране.</p></li>
+    <li class="fade"><h3>Работа</h3><p>Согласованную смету не трогаю. Попутное — только с твоего «да».</p></li>
+    <li class="fade"><h3>Сдача</h3><p>Катаюсь по улице вместе, чтобы послушать результат. Гарантия на работу — 6 месяцев.</p></li>
+  </ol>
+</section>
+
+<section class="wrap" id="zapis">
+  <div class="form-box">
+  <h2>Запись на диагностику</h2>
+  <p>Марка, год, что беспокоит — и время, когда перезвонить.</p>
+  <form onsubmit="return demoSend(event)">
+    <input type="text" required placeholder="Например: Kia Rio 2016, стучит справа при торможении" class="inp">
+    <input type="tel" required placeholder="Телефон" class="inp">
+    <button type="submit" class="btn btn-cta">Записаться</button>
+  </form>
+  <p class="micro">Нажимая «Записаться», соглашаетесь на обработку данных из формы.</p>
+  <p id="demoStatus" class="micro"></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap inner-footer">
+    <span>МОТОР+ · автосервис (демо)</span>
+    <span>Демонстрационный проект: компания вымышленная, изображение сгенерировано нейросетью.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
